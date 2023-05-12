@@ -1,15 +1,15 @@
-import tw from 'twin.macro';
-import { breakpoint } from '@/theme';
-import styled from 'styled-components/macro';
+import tw from "twin.macro";
+import { breakpoint } from "@/theme";
+import styled from "styled-components/macro";
 
 const ContentContainer = styled.div`
-    ${tw`mx-4`};
+  ${tw`mx-4`};
 
-    ${breakpoint('xl')`
+  ${breakpoint("xl")`
         ${tw`ml-36 mr-16`};
     `};
 `;
 
-ContentContainer.displayName = 'ContentContainer';
+ContentContainer.displayName = "ContentContainer";
 
 export default ContentContainer;

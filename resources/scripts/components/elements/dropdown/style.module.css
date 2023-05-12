@@ -5,11 +5,14 @@
     @apply inline-flex justify-center items-center w-full py-2 text-neutral-100 rounded-md;
     @apply transition-all duration-100;
 
-    &:hover, &[aria-expanded="true"] {
+    &:hover,
+    &[aria-expanded="true"] {
       @apply bg-neutral-600 text-white;
     }
 
-    &:focus, &:focus-within, &:active {
+    &:focus,
+    &:focus-within,
+    &:active {
       @apply ring-2 ring-opacity-50 ring-neutral-300 text-white;
     }
 
@@ -34,7 +37,8 @@
     @apply w-4 h-4 mr-4 text-neutral-300;
   }
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     @apply bg-blue-500 text-blue-50;
 
     & svg {
@@ -43,7 +47,8 @@
   }
 
   &.danger {
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       @apply bg-red-500 text-red-50;
 
       & svg {

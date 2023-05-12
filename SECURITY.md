@@ -1,10 +1,11 @@
 # Security Policy
 
 ## Supported Versions
+
 The following versions of Jexactyl are receiving active support and maintenance. Any security vulnerabilities discovered must be reproducible in supported versions.
 
 | Panel   | Supported          |
-|---------|--------------------|
+| ------- | ------------------ |
 | 3.7.x   | :white_check_mark: |
 | 3.6.x   | :white_check_mark: |
 | < 3.5.x | :x:                |

@@ -1,6 +1,5 @@
 # Contributing
 
-
 ### Responsible Disclosure
 
 This is a fairly in-depth project and makes use of a lot of parts. We strive to keep everything as secure as possible

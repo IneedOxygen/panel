@@ -1,5 +1,5 @@
-import { MarkRequired } from 'ts-essentials';
-import { FractalResponseData, FractalResponseList } from '../http';
+import { MarkRequired } from "ts-essentials";
+import { FractalResponseData, FractalResponseList } from "../http";
 
 export type UUID = string;
 
@@ -7,7 +7,7 @@ export type UUID = string;
 export interface Model {}
 
 interface ModelWithRelationships extends Model {
-    relationships: Record<string, FractalResponseData | FractalResponseList | undefined>;
+  relationships: Record<string, FractalResponseData | FractalResponseList | undefined>;
 }
 
 /**
@@ -20,8 +20,8 @@ interface ModelWithRelationships extends Model {
  *  >> const user: WithLoaded<User, 'servers'> = {};
  *  >> // "user.servers" is no longer potentially undefined.
  */
-type WithLoaded<M extends ModelWithRelationships, R extends keyof M['relationships']> = M & {
-    relationships: MarkRequired<M['relationships'], R>;
+type WithLoaded<M extends ModelWithRelationships, R extends keyof M["relationships"]> = M & {
+  relationships: MarkRequired<M["relationships"], R>;
 };
 
 /**

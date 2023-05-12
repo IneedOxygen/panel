@@ -1,4 +1,4 @@
-import { ComponentType, lazy } from 'react';
+import { ComponentType, lazy } from "react";
 
 /**
  * Custom features should be registered here as lazy components so that they do
@@ -7,11 +7,11 @@ import { ComponentType, lazy } from 'react';
  * on the feature and the egg).
  */
 const features: Record<string, ComponentType> = {
-    eula: lazy(() => import('@feature/eula/EulaModalFeature')),
-    java_version: lazy(() => import('@feature/JavaVersionModalFeature')),
-    gsl_token: lazy(() => import('@feature/GSLTokenModalFeature')),
-    pid_limit: lazy(() => import('@feature/PIDLimitModalFeature')),
-    steam_disk_space: lazy(() => import('@feature/SteamDiskSpaceFeature')),
+  eula: lazy(() => import("@feature/eula/EulaModalFeature")),
+  java_version: lazy(() => import("@feature/JavaVersionModalFeature")),
+  gsl_token: lazy(() => import("@feature/GSLTokenModalFeature")),
+  pid_limit: lazy(() => import("@feature/PIDLimitModalFeature")),
+  steam_disk_space: lazy(() => import("@feature/SteamDiskSpaceFeature")),
 };
 
 export default features;
